@@ -43,7 +43,6 @@ GameObject:
   - component: {fileID: 2297078324184932978}
   - component: {fileID: 3968910433267446051}
   - component: {fileID: 3932468512726291020}
-  - component: {fileID: 8174259601026115970}
   m_Layer: 0
   m_Name: Object_8
   m_TagString: Untagged
@@ -116,28 +115,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8174259601026115970
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2192722892678261744}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 024f17318573b2a4e864c13549c4b0af, type: 2}
 --- !u!1 &2290429128980147679
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,6 +443,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7288447370013750826}
+  - component: {fileID: 300642535804919555}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -489,6 +467,27 @@ Transform:
   - {fileID: 5682667191648268668}
   m_Father: {fileID: 2290429128980147672}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &300642535804919555
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3214794873285659436}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.362495, y: 1.975252, z: 1.4492525}
+  m_Center: {x: -0.01375854, y: -0.013428864, z: -0.06833933}
 --- !u!1 &4203628287078083975
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,6 +879,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7396278978564332023, guid: eb9104ef66b7305468adb3697fdeed5e,
+        type: 3}
+      propertyPath: m_Renderer
+      value: 
+      objectReference: {fileID: 9023453687165070590}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
